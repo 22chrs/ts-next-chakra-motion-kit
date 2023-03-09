@@ -1,16 +1,16 @@
 import { en_US } from '@/internationalization/locales/en/en_US';
-import { fr_FR } from '@/internationalization/locales/fr/fr_FR';
+import { de_DE } from '@/internationalization/locales/de/de_DE';
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import XHR from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
 const resources = {
-  us: {
+  en: {
     translation: en_US,
   },
-  fr: {
-    translation: fr_FR,
+  de: {
+    translation: de_DE,
   },
 };
 
@@ -27,9 +27,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'de',
     detection: options,
-    supportedLngs: ['en', 'fr'],
+    supportedLngs: ['de', 'en'],
     interpolation: {
       escapeValue: false,
     },

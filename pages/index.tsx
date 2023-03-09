@@ -16,8 +16,8 @@ import {
 import NextImage from 'next/image';
 import { Trans, useTranslation } from 'react-i18next';
 import { FiExternalLink } from 'react-icons/fi';
-import { ImSphere } from 'react-icons/im';
-import { GITHUB_PROFILE, WEBSITE } from 'src/constants';
+import { FiMail, FiInstagram } from 'react-icons/fi';
+import { MAIL, INSTA } from 'src/constants';
 
 const CustomImage = chakra(NextImage, {
   baseStyle: {
@@ -50,12 +50,12 @@ const IndexPage = () => {
           w={{ base: '100%', md: '50%' }}
           py={{ base: 20, md: 0 }}
         >
-          <Heading as='h1'>Alexandre GOSSARD</Heading>
+          <Heading as='h1'>Hej Toto</Heading>
           <Divider />
 
           <Text color='gray.500' align='justify'>
             <Trans i18nKey='excerpt'>
-              <strong>Student</strong> by day, <strong>mad developer</strong> by
+              <strong>Toto</strong> by day, <strong>mad developer</strong> by
               night. Passionate about computer science and{' '}
               <strong>new technologies</strong>, currently{' '}
               <ExternalLink href='https://nextjs.org/'>Next.js</ExternalLink> &{' '}
@@ -71,22 +71,22 @@ const IndexPage = () => {
             w='full'
             justify={{ base: 'center', md: 'flex-start' }}
           >
-            <Link href={WEBSITE} isExternal>
+            <Link href={MAIL} isExternal>
               <Button
                 colorScheme='brand'
                 variant='ghost'
-                rightIcon={<ImSphere />}
+                rightIcon={<FiMail />}
               >
-                Website
+                Hej Toto
               </Button>
             </Link>
-            <Link href={GITHUB_PROFILE} isExternal>
+            <Link href={INSTA} isExternal>
               <Button
                 colorScheme='brand'
                 variant='ghost'
-                rightIcon={<FiExternalLink />}
+                rightIcon={<FiInstagram />}
               >
-                Github
+                Insta
               </Button>
             </Link>
           </HStack>

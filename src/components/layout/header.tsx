@@ -10,8 +10,8 @@ const Header = () => {
       top='0'
       p={8}
       zIndex='tooltip'
-      justify='space-between'
-      align='center'
+      justify='right'
+      //align='center'
       w='100%'
     >
       <ThemeButton />
